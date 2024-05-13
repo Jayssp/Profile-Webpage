@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* Reset and base styles */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for centering content */
+.container {
+  width: 90%;
+  max-width: 1200px; /* Set a max-width for larger screens */
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header styles */
+header {
+  background: #333;
+  color: white;
+  padding: 1rem 0;
+  border-bottom: 3px solid #e8491d;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+header ul {
+  list-style: none;
+  padding: 0;
+}
+
+header li {
+  display: inline;
+  padding: 0 1.25rem;
+}
+
+header .highlight,
+header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: #429188;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+#showcase {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 2rem 0;
+  text-align: center; /* Center text */
+}
+
+#personal-image {
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 20px 0; /* Vertical margin only */
+}
+
+
+/* Projects section */
+#projects {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item {
+  margin-bottom: 2rem;
+}
+
+.project-item h3 {
+  color: #333;
+}
+
+.project-item p {
+  color: #666;
+}
+
+#social-media {
+  padding: 20px 0 100px 0;
+  overflow: auto;
+  padding: 20px 0;
+}
+
+#social-media a {
+  display: inline-block;
+  background-color: #50b3a2;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+#social-media a:hover {
+  background-color: #429188;
+}
+
+/* Smooth transitions for interactive elements */
+a,
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.button,
+a.button {
+  transition: all 0.3s ease;
+}
+
+/* Clear floats */
+header::after,
+main::after,
+section::after,
+footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Enhance visual hierarchy */
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6c5ce7;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #00b894;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fdcb6e;
+}
+
+p {
+  font-size: 1.2rem; /* Increased font size for better readability */
+  line-height: 1.8; /* Maintain a comfortable line height */
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #555;
+  text-shadow: 1px 1px 2px #eaeaea;
+  margin-bottom: 1rem;
+}
+
+
+ul {
+  list-style-position: inside;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Additional sections */
+#education,
+#experience,
+#about-me,
+#youtube-channel {
+  background-color: #ffffff;
+  padding: 2rem 2rem 1rem 2rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+  color: #333;
+  margin-top: 0;
+}
+
+/* YouTube channel section */
+#youtube-channel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-playlist {
+  width: 300px;
+  height: 100px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.youtube-button {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: #ff0000;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-button:hover {
+  background-color: #c60000;
+}
+
+.project-item {
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  background-color: #eaeaea;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Dynamic Effects */
+@keyframes color-change {
+  0% {
+    background-color: #ff0000;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  100% {
+    background-color: #0000ff;
+  }
+}
+
+.dynamic-background {
+  animation: color-change 5s infinite alternate;
+}
+
+.home-button {
+  display: inline-block;
+  background-image: linear-gradient(to right, #e91717, #061109);
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.home-button:hover,
+.home-button:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-position: left bottom;
+}
+
+/* New styles for youtube-playlist grid */
+#youtube-channel .completed-playlists,
+#youtube-channel .incomplete-playlists {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+}
+
+.youtube-playlist {
+  height: auto; /* Adjust height as needed */
+  padding: 1rem;
+  margin-bottom: 1rem; /* Add space between playlist items */
+}
+
+/* Unique button colors */
+.real-analysis {
+  background-color: #A8DADC; /* Powder Blue */
+}
+
+.general-topology {
+  background-color: #F1FAEE; /* Honeydew */
+  color: #1D3557; /* Dark Blue text color for better contrast */
+}
+
+.complex-analysis {
+  background-color: #F4A261; /* Sandy Brown */
+}
+
+.abstract-linear-algebra {
+  background-color: #2A9D8F; /* Persian Green */
+}
+
+.multivariable-calc {
+  background-color: #E9C46A; /* Orange Yellow Crayola */
+}
+
+.differential-geometry {
+  background-color: #264653; /* Charcoal */
+}
+
+.fourier-analysis {
+  background-color: #2a9d8f; /* Persian Green */
+}
+
+/* Hover effect for all buttons */
+.youtube-button:hover {
+  opacity: 0.8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
